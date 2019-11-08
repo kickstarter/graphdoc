@@ -1,5 +1,5 @@
 {
-  "name": "@2fd/graphdoc",
+  "name": "graphdoc",
   "version": "2.4.0",
   "description": "Static page generator for documenting GraphQL Schema",
   "main": "bin/graphdoc",
@@ -17,12 +17,11 @@
     "doc.scaphold": "node bin/graphdoc.js -c example.scaphold.json -f -v",
     "doc.starwars": "node bin/graphdoc.js -c example.starWars.json -f -v",
     "doc.starwars-js": "node bin/graphdoc.js -c example.starWars-js.json -f -v",
-    "test": "jest",
-    "postinstall": "npm run compile"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/2fd/graphdoc.git"
+    "url": "git+https://github.com/kickstarter/graphdoc.git"
   },
   "keywords": [
     "graphql",
