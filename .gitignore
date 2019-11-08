@@ -45,5 +45,4 @@ jspm_packages
 *.js.map
 *.d.ts
 gh-pages
-build/*
 /.idea
