@@ -41,6 +41,7 @@ jspm_packages
 *.js
 !lib/**/*.js
 !template/**/*.js
+!plugins/**/*.js
 !plugins/**/assets/*.js
 *.js.map
 *.d.ts
