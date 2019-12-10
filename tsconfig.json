@@ -14,5 +14,5 @@
     "strictNullChecks": true,
     "sourceMap": false
   },
-  "exclude": ["node_modules/*", "gh-pages", "templates"]
+  "exclude": ["node_modules/*", "gh-pages", "templates", "test"]
 }
