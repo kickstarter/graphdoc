@@ -33,9 +33,9 @@
         </div>
     </nav>
     <main>{{> main}}</main>
-    <script src="./scripts/focus-active.js"></script>
-    <script src="./scripts/filter-types.js"></script>
-    <script src="./scripts/toggle-navigation.js"></script>
+    <script>
+      !function(){function t(t){this.li=t,this.type=t.title,this.typeLowerCase=t.title.toLowerCase()}function e(t){this.items=t}t.prototype.contains=function(t){return this.typeLowerCase.indexOf(t)>=0},t.prototype.isHide=function(){this.li.classList.contains("slds-hide")},t.prototype.hide=function(){this.isHide()||this.li.classList.add("slds-hide")},t.prototype.show=function(){this.li.classList.remove("slds-hide")},e.fromSelector=function(o){var i=document.querySelectorAll(o);return new e(Array.prototype.map.call(i,function(e){return new t(e)}))},e.prototype.showIfmatch=function(t){t=t.toLowerCase(t),this.items.forEach(function(e){e.contains(t)?e.show():e.hide()})};var o=e.fromSelector("nav .slds-navigation-list--vertical li"),i=document.getElementById("type-search"),n="";function s(){i.value!==n&&(n=i.value,o.showIfmatch(n))}i.addEventListener("change",s),i.addEventListener("keyup",s),i.addEventListener("mouseup",s)}()(function(){var t=document.getElementById("navication-scroll"),e=document.querySelector("nav header"),o=document.querySelector(".slds-is-active a");o&&(t.scrollTop=o.offsetTop-e.offsetHeight-Math.ceil(o.offsetHeight/2))})()(function(){var t="is-active",e=document.querySelector("nav"),o=document.querySelectorAll(".js-toggle-navigation");function i(){e.classList.contains(t)?e.classList.remove(t):e.classList.add(t)}Array.prototype.forEach.call(o,function(t){t.addEventListener("click",i)})})();	
+    </script>
     {{#projectPackage.graphdoc.ga}}
     <script>
         (function (i, s, o, g, r, a, m) {
