@@ -80,10 +80,9 @@ main .container {
 
 main code.highlight {
     display: block;
-    background: #4D4D4C;
+    background: #CCC;
     position: relative;
-    box-shadow: $elevation-shadow-4;
-    padding: $spacing-xxx-small;
+    padding: $spacing-xx-small;
     padding-top: $spacing-large;
     border-radius: $border-radius-medium;
     min-width: 50rem;
