@@ -39,6 +39,7 @@ jspm_packages
 
 .vscode
 *.js
+!lib/*.js
 !lib/**/*.js
 !template/**/*.js
 !plugins/**/*.js
