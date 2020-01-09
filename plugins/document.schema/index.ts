@@ -1,4 +1,3 @@
-import { resolve } from "path";
 import wrap from "word-wrap";
 import {
   Directive,
@@ -30,16 +29,7 @@ export default class SchemaPlugin extends Plugin implements PluginInterface {
 
   getHeaders(): string[] {
     return [
-      '<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">',
-      '<link type="text/css" rel="stylesheet" href="./assets/code.css" />',
-      '<script src="./assets/line-link.js"></script>'
-    ];
-  }
-
-  getAssets() {
-    return [
-      resolve(__dirname, "assets/code.css"),
-      resolve(__dirname, "assets/line-link.js")
+      '<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">'
     ];
   }
 

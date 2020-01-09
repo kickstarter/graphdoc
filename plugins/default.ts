@@ -47,8 +47,4 @@ export default class NavigationDirectives extends Plugin
   getHeaders(buildForType?: string): Promise<string[]> {
     return Plugin.collectHeaders(this.plugins, buildForType);
   }
-
-  getAssets(): Promise<string[]> {
-    return Plugin.collectAssets(this.plugins);
-  }
 }

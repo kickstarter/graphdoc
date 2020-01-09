@@ -54,9 +54,6 @@ var NavigationDirectives = /** @class */ (function (_super) {
     NavigationDirectives.prototype.getHeaders = function (buildForType) {
         return utility_1.Plugin.collectHeaders(this.plugins, buildForType);
     };
-    NavigationDirectives.prototype.getAssets = function () {
-        return utility_1.Plugin.collectAssets(this.plugins);
-    };
     return NavigationDirectives;
 }(utility_1.Plugin));
 exports.default = NavigationDirectives;
