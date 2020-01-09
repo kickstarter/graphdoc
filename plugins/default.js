@@ -17,7 +17,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var utility_1 = require("../lib/utility");
-var document_require_by_1 = __importDefault(require("./document.require-by"));
 var document_schema_1 = __importDefault(require("./document.schema"));
 var navigation_directive_1 = __importDefault(require("./navigation.directive"));
 var navigation_enum_1 = __importDefault(require("./navigation.enum"));
@@ -41,7 +40,6 @@ var NavigationDirectives = /** @class */ (function (_super) {
             new navigation_input_1.default(document, graphdocPackage, projectPackage),
             new navigation_directive_1.default(document, graphdocPackage, projectPackage),
             new document_schema_1.default(document, graphdocPackage, projectPackage),
-            new document_require_by_1.default(document, graphdocPackage, projectPackage)
         ];
         return _this;
     }

@@ -5,7 +5,7 @@ import {
   Schema
 } from "../lib/interface";
 import { Plugin } from "../lib/utility";
-import RequireByPlugin from "./document.require-by";
+
 import DocumentSchema from "./document.schema";
 import NavigationDirective from "./navigation.directive";
 import NavigationEnum from "./navigation.enum";
@@ -32,7 +32,6 @@ export default class NavigationDirectives extends Plugin
       new NavigationInput(document, graphdocPackage, projectPackage),
       new NavigationDirective(document, graphdocPackage, projectPackage),
       new DocumentSchema(document, graphdocPackage, projectPackage),
-      new RequireByPlugin(document, graphdocPackage, projectPackage)
     ];
   }
 
