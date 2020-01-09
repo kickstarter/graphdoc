@@ -50,18 +50,17 @@ export class HTML {
     type: DeepTypeRef | TypeRef | Description,
     toUrl: string
   ): string {
-    const prefix = "graphql_docs/";
     switch (type.kind) {
       case LIST:
         return (
-          "[" + this.useIdentifier((type as DeepTypeRef).ofType, prefix + toUrl) + "]"
+          "[" + this.useIdentifier((type as DeepTypeRef).ofType, toUrl) + "]"
         );
 
       case NON_NULL:
-        return this.useIdentifier((type as DeepTypeRef).ofType, prefix + toUrl) + "!";
+        return this.useIdentifier((type as DeepTypeRef).ofType, toUrl) + "!";
 
       default:
-        return `<a class="support type" href="${prefix}${toUrl}">${type.name}</a>`;
+        return `<a class="support type" href="${toUrl}">${type.name}</a>`;
     }
   }
 
