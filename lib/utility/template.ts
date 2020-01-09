@@ -9,7 +9,7 @@ import {
 import { Plugin } from "./plugin";
 
 export function slugTemplate() {
-  return (text, render) => slug(render(text)).toLowerCase();
+  return (text, render) => 'graphql_docs/' + slug(render(text)).toLowerCase();
 }
 
 export interface ITemplateData {
